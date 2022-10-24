@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 500px;
+            margin: auto;
+            box-shadow: 2px 2px 1.5px #00000053;
+            padding: 40px;
+            text-align: center;
+            background-color: #fb8022;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            min-width: 100px;
+            max-width: 70vw;
+            
+        }
+
+        form>h1{
+            font-size: 2.4em;
+            text-shadow: 6px 6px 3px #00000023;
+            animation:fadeInLeftBig .9s;
+            min-width: 100px;
+            max-width: 100%;
+        }
+
+        form>p{
+            text-align: center;
+            justify-self: center;
+            animation:fadeInLeftBig .9s;
+            min-width: 100px;
+            max-width: 100%;
+
+        }
+
+        form>p>label>input{
+            width: 230px;
+            padding: 5px;
+            animation:fadeInLeftBig .6s;
+            min-width: 100px;
+            max-width: 100%;
+
+        }
+        
+        #botao-enviar{
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            animation:fadeInLeftBig .9s;
+            min-width: 100px;
+            max-width: 100%;
+
+        }
+
+        
+@keyframes fadeInLeftBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-220px, 0, 0);
+  transform: translate3d(-220px, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <form action="#" id="formulario" method="post">
+            <h1>Exercicio</h1>
+            <p><label for="inome">Nome: <input type="text" placeholder="Seu nome..." name="nome" id="inome"></label></p>
+            <p><label for="isobrenome">Sobrenome: <input type="text" placeholder="Seu sobrenome..." name="sobrenome" id="isobrenome"></label></p>
+            <p><label for="ipeso">Peso/Kg: <input type="text" name="peso" placeholder="peso em kg..." id="ipeso"></label></p>
+            <p><label for="ialtura">Altura: <input type="text" name="altura" placeholder="altura em metros..." id="ialtura"></label></p>
+            <input type="submit" id="botao-enviar" onsubmit="" value="Enviar">
+            <section id="texto"></section>
+        </form>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
