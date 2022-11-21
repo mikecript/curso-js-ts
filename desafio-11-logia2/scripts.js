@@ -16,3 +16,5 @@ function ePaisagem(largura, altura) {
 
 
 ePaisagem(1250 , 720)
+ePaisagem(1080 , 720)
+ePaisagem(720 , 1080)
