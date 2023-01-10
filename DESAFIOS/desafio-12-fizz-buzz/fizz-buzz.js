@@ -37,4 +37,14 @@ function fizzBuzz(numero) {
 
     }
    
-fizzBuzz(12)
+
+
+
+function acionafuncao(){
+    
+    const numero = document.getElementById('#numerofizz');
+    const resultado = document.getElementById('#resultado');
+
+    return resultado.innerHTML = `Seu resultado será ${fizzBuzz(Number(numero))}`
+
+}
