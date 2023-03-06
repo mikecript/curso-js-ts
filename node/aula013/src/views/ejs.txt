@@ -1,0 +1,23 @@
+<% controle de fluxo (if, for....)  %>
+<%= imprime escapando caracteres %>
+<%- imprime sem escapar caracteres %> executa html
+<%# comentario %>
+
+<% include('CAMINHO/ARQUIVO'); %>
+
+
+<% if (algumacoisa) { %>
+
+    <%= exibe algo  %>
+
+<% } %> else { %>
+
+    <%= exibe algo  %>
+    
+<% } %>
+
+
+
+
+
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
